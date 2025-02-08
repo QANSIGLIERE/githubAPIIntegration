@@ -15,6 +15,39 @@ https://buymeacoffee.com/qansigliere
 
 Using npm `npm i qansigliere-github-api-integration`
 
+## How to use it
+
+### Create a \*.env file
+
+Create any \*.env file (like `github.env`) and write the following information in the created file
+
+```
+export GITHUB_URL="https://__YOUR_URL__"
+export GITHUB_AUTH_TOKEN="__YOUR_APIKEY__"
+```
+
+### Make the \*.env file works
+
+Just run in the terminal the following command: `source github.env`
+
+### Repositories
+
+#### Get information about all repositories for any specific user
+
+```
+let newIntegration = new Github_API();
+let request = await newIntegration.getRepos('__USER_NAME__');
+```
+
+### Pull Requests
+
+#### Get all pull requests for any specific repository
+
+```
+let newIntegration = new Github_API();
+let request = await newIntegration.getPullRequests('__USER_NAME__', '__REPO_NAME__');
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
