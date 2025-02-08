@@ -1,6 +1,6 @@
 {
   "name": "qansigliere-github-api-integration",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The main idea of ​​this library created in the JavaScript language is to provide a ready-made set of API methods for integration with Github",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/QANSIGLIERE/githubAPIIntegration/issues"
   },
-  "homepage": "https://github.com/QANSIGLIERE/githubAPIIntegration#readme"
+  "homepage": "https://github.com/QANSIGLIERE/githubAPIIntegration#readme",
+  "dependencies": {
+    "qansigliere-axios-utils": "^0.9.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
 }
