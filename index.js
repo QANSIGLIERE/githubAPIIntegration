@@ -3,7 +3,7 @@ var { Github_API } = require('./lib/apiIntegration');
 // Remove me at the end
 (async function API() {
     let newIntegration = new Github_API();
-    let request = await newIntegration.getPullRequests('QANSIGLIERE', 'githubAPIIntegration');
+    let request = await newIntegration.getPullRequestComments('QANSIGLIERE', 'githubAPIIntegration');
 
     console.log(JSON.stringify(request));
 })();
