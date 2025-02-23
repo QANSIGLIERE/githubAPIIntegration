@@ -32,20 +32,29 @@ Just run in the terminal the following command: `source github.env`
 
 ### Repositories
 
-#### Get information about all repositories for any specific user
+#### Get information about repositories
 
 ```
-let newIntegration = new Github_API();
-let request = await newIntegration.getRepos('__USER_NAME__');
+let newIntegration = new Gitlab_API();
+let request = await newIntegration.getRepositories('QANSIGLIERE', 'githubAPIIntegration');
 ```
 
 ### Pull Requests
 
-#### Get all pull requests for any specific repository
+#### Get information about pull requests
 
 ```
-let newIntegration = new Github_API();
-let request = await newIntegration.getPullRequests('__USER_NAME__', '__REPO_NAME__');
+let newIntegration = new Gitlab_API();
+let request = await newIntegration.getPullRequests('QANSIGLIERE', 'githubAPIIntegration', 'state=all');
+```
+
+### Pull Request Comments
+
+#### Get information about pull request comments
+
+```
+let newIntegration = new Gitlab_API();
+let request = await newIntegration.getPullRequestComments('QANSIGLIERE', 'githubAPIIntegration');
 ```
 
 ## Improvements & Suggestions
@@ -55,3 +64,4 @@ https://forms.gle/GZbS9hw42tSYJxKL7
 ## Related Videos
 
 -   https://www.youtube.com/live/7PKee5GzVWk?si=zhlooAfCUqU3Rc2s
+-   https://www.youtube.com/live/Cc0BRnK3V6s?si=egbqRq_2SBiEgzzm
