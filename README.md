@@ -57,6 +57,15 @@ let newIntegration = new Gitlab_API();
 let request = await newIntegration.getPullRequestComments('QANSIGLIERE', 'githubAPIIntegration');
 ```
 
+### List repositories for the authenticated user
+
+#### Get a list repositories for the authenticated user
+
+```
+let newIntegration = new Gitlab_API();
+let request = await newIntegration.getRepositoriesForAuthenticatedUser('githubAPIIntegration');
+```
+
 ## Improvements & Suggestions
 
 https://forms.gle/GZbS9hw42tSYJxKL7
@@ -65,3 +74,4 @@ https://forms.gle/GZbS9hw42tSYJxKL7
 
 -   https://www.youtube.com/live/7PKee5GzVWk?si=zhlooAfCUqU3Rc2s
 -   https://www.youtube.com/live/Cc0BRnK3V6s?si=egbqRq_2SBiEgzzm
+-   https://www.youtube.com/live/R-svjNYkNso?si=Zm5paMw8WYgdFXR8
